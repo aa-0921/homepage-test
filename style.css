@@ -1,17 +1,32 @@
-
 html {
     scroll-behavior: smooth;
   }
 
-/* TOP */
-#top {
-  background-image: url(movie/video1.mp4);
-  
+
+/* top */
+
+.video-container {
+  position: relative; 
+}
+
+video {
+  position: relative;
+  width: 100%;
+}
+
+.top-video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
 }
 
 /* menu */
 #menu {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.889);
   position: fixed;
   z-index: 10;
   width: 100%;
