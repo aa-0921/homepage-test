@@ -3,6 +3,12 @@ html {
     scroll-behavior: smooth;
   }
 
+/* TOP */
+#top {
+  background-image: url(movie/video1.mp4);
+  
+}
+
 /* menu */
 #menu {
   background-color: #fff;
