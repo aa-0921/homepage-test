@@ -45,3 +45,55 @@ video {
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
   border-radius: 30px;
 }
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* top */
+
+.video-container {
+position: relative; 
+}
+
+video {
+position: relative;
+width: 100%;
+}
+
+.top-video-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+
+}
+
+/* menu */
+#menu {
+background-color: rgba(255, 255, 255, 0.889);
+position: fixed;
+z-index: 10;
+width: 100%;
+transition: .5s;
+}
+
+#navi {
+font-size: 0.9rem;
+font-weight: bold;
+}
+
+
+/* button */
+
+.bg-transparent {
+background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+border-radius: 30px;
+}
