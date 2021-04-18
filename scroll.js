@@ -11,3 +11,7 @@ $(function() {
 		startPos = scrollPos;
 	});
 });	
+
+$('#menu a[href]').on('click', function(event) {
+	$('#hamburger-menu').trigger('click');
+});
