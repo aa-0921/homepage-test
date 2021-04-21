@@ -1,8 +1,3 @@
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -11,16 +6,15 @@ html {
 /* top */
 
 .video-container {
-position: relative; 
+  position: relative;
 }
 
 video {
-position: relative;
-width: 100%;
+  position: relative;
+  width: 100%;
 }
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   #video1 {
     display: none;
   }
@@ -32,8 +26,8 @@ width: 100%;
     background-repeat: none;
   }
 
-  .video-container::before{
-        background: inherit;
+  .video-container::before {
+    background: inherit;
     filter: blur(2.5px);
     position: absolute;
     top: 0;
@@ -41,37 +35,81 @@ width: 100%;
     bottom: 0;
     left: 0;
     content: ' ';
-}
+  }
 }
 
 .top-video-text {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /* menu */
 #menu {
-background-color: rgba(255, 255, 255, 0.889);
-position: fixed;
-z-index: 10;
-width: 100%;
-transition: .5s;
+  background-color: rgba(255, 255, 255, 0.889);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  transition: .5s;
 }
 
 #navi {
-font-size: 0.9rem;
-font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 
 /* button */
 
 .bg-transparent {
-background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-border-radius: 30px;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  border-radius: 30px;
 }
+
+/* button */
+.bg-transparent {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  border-radius: 30px;
+}
+/* ---radio button------ */
+.tabAnim {
+  z-index: -9;
+}
+.radio-focus {
+  background-color: #72a1c7;
+}
+#option0:checked ~ div {
+  --tw-translate-x: 0%;
+}
+#option1:checked ~ div {
+  --tw-translate-x: 100%;
+}
+#option2:checked ~ div {
+  --tw-translate-x: 200%;
+}
+#option3:checked ~ div {
+  --tw-translate-x: 300%;
+}
+#option4:checked ~ div {
+  --tw-translate-x: 400%;
+}
+.radio-button {
+  flex-direction: column;
+}
+.form-summit button {
+  background-color: #90caf9;
+}
+/* ---radio button------ */
+
+
+/* 画面サイズが768pxまではここを読み込む  (sm) */
+@media (max-width: 767px) {
+  .radio-button label {
+    font-size: 0.7rem;
+  }
+}
+
+
