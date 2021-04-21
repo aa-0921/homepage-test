@@ -99,7 +99,7 @@ video {
 .radio-button {
   flex-direction: column;
 }
-.form-summit button {
+.form-submit button {
   background-color: #90caf9;
 }
 /* ---radio button------ */
@@ -113,3 +113,11 @@ video {
 }
 
 
+/* ---form message------ */
+.end-message {
+  display: none;
+}
+.false-message {
+  display: none;
+}
+/* ---form message------ */
