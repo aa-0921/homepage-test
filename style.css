@@ -104,6 +104,13 @@ video {
 /* ---radio button------ */
 
 
+@media screen and  (min-width:768px) {
+  .drawer {
+    display:none;
+  }
+  
+}
+
 /* 画面サイズが768pxまではここを読み込む  (sm) */
 @media (max-width: 767px) {
   .radio-button label {
@@ -200,6 +207,9 @@ video {
   background: #fff;
   transition: .5s;
   opacity: .9;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .3);
 }
 
 /* アイコンがクリックされたらメニューを表示 */

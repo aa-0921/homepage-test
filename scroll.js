@@ -13,8 +13,6 @@ $(function() {
 });	
 
 
-$(function() {
-    $('#humburger-menu a').on('click', function(event) {
-        $('.drawer-content').hide();
-    });
+$('.drawer-item a[href]').on('click', function(event) {
+    $('.drawer-hidden').trigger('click');
 });
