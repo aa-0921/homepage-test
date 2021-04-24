@@ -15,4 +15,11 @@ $(function() {
 
 $('.drawer-item a[href]').on('click', function(event) {
     $('.drawer-hidden').trigger('click');
+	$('html').removeClass('scroll-prevent');
 });
+
+
+$('#drawer-check').on('click', function() {
+	$('html').addClass('scroll-prevent');
+});
+
