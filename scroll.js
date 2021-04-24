@@ -18,8 +18,10 @@ $('.drawer-item a[href]').on('click', function(event) {
 	$('html').removeClass('scroll-prevent');
 });
 
-
-$('#drawer-check').on('click', function() {
-	$('html').addClass('scroll-prevent');
-});
-
+$(".drawer-hidden").click(function () {
+	if ($("#drawer-check").prop("checked") == true) {
+		$('html').addClass('scroll-prevent');
+	} else {
+		$('html').removeClass('scroll-prevent');
+	}
+  })

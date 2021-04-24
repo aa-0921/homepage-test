@@ -4,7 +4,7 @@ html {
 
 .scroll-prevent {
   /*動き固定*/
-  position: fixed;
+  overflow-y: hidden;
 }
 
 /* top */
