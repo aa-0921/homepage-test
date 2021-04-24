@@ -12,6 +12,9 @@ $(function() {
 	});
 });	
 
-$('#menu a[href]').on('click', function(event) {
-	$('#hamburger-menu').trigger('click');
+
+$(function() {
+    $('#humburger-menu a').on('click', function(event) {
+        $('.drawer-content').hide();
+    });
 });

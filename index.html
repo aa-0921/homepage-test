@@ -38,7 +38,39 @@
                 </div>
               </div>
 
-              <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 fixed">
+              <!-- ハンバーガーメニュー部分 -->
+              <div class="drawer">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="drawer-content">
+                  <ul class="drawer-list"　id="hamburger-close">
+                    <li class="drawer-item">
+                      <a href="#sales-point" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">当社の強み</a>
+                    </li>
+                    <li class="drawer-item">
+                      <a href="#price" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">料金プラン</a>
+                    </li>
+                    <li class="drawer-item">
+                      <a href="#flow" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">制作の流れ</a>
+                    </li>
+                    <li class="drawer-item">
+                      <a href="#faq" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">よくある質問</a>
+                    </li>
+                    <li class="drawer-item">
+                      <a href="#contact" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">お問い合わせ</a>
+                    </li>
+                    </ul><!-- /.drawer-list -->
+                </nav>
+
+              </div>
+
+              <!-- <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 fixed">
                 <svg
                   class="w-6 h-6 text-gray-700"
                   x-show="!showMenu"
@@ -66,7 +98,8 @@
                     d="M6 18L18 6M6 6l12 12">
                   </path>
                 </svg>
-              </div>
+              </div> -->
+
             </div>
           </nav>
       </div>
@@ -95,7 +128,7 @@
     <section class="static　w-full bg-gray-100 pt-7 pb-7 md:pt-20 md:pb-24" id="sales-point">
 
       <p class="text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-        ADVANTAGE
+        POINT
       </p>
       <h2 class="text-3xl font-bold tracking-tight text-center">
         当社の強み
