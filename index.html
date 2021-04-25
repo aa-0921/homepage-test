@@ -1,78 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home Page Test</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Section 1　main visual -->
-    <section class="w-screen antialiased bg-white">
 
-      <!-- Menu -->
-      <div class="">
-          <nav id="menu" class="relative z-50 h-14 select-none" x-data="{ showMenu: false }">
-            <div class="flex flex-wrap items-center justify-between h-14 overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2">
-              <div class="flex items-center justify-start h-full pr-4 pl-4">
-                <a href="#_" class="inline-block py-4 md:py-0 ">
-                  <span class="p-1 text-xl font-black leading-none text-gray-900"><span>tails</span><span class="text-indigo-600">.</span></span>
-                </a>
+<head>
+  <title>Home Page Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Section 1　main visual -->
+  <section class="w-screen antialiased bg-white">
+
+    <!-- Menu -->
+    <div class="">
+      <nav id="menu" class="relative z-50 h-14 select-none" x-data="{ showMenu: false }">
+        <div
+          class="flex flex-wrap items-center justify-between h-14 overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2">
+          <div class="flex items-center justify-start h-full pr-4 pl-4">
+            <a href="#_" class="inline-block py-4 md:py-0 ">
+              <span class="p-1 text-xl font-black leading-none text-gray-900"><span>tails</span><span
+                  class="text-indigo-600">.</span></span>
+            </a>
+          </div>
+          <div
+            class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex"
+            :class="{'flex fixed': showMenu, 'hidden': !showMenu }" id="hamburger-menu">
+            <div
+              class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+              <a href="#_"
+                class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">tails<span
+                  class="text-indigo-600">.</span></a>
+              <div
+                class="flex flex-col items-start justify-end w-full space-x-6 text-center lg:space-x-8 md:mt-0 md:flex-row md:items-center"
+                id="navi">
+                <a href="#sales-point"
+                  class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">当社の強み</a>
+                <a href="#price"
+                  class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">料金プラン</a>
+                <a href="#flow"
+                  class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">制作の流れ</a>
+                <a href="#faq"
+                  class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">よくある質問</a>
+                <a href="#contact"
+                  class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">お問い合わせ</a>
               </div>
-              <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }" id="hamburger-menu">
-                <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                  <a href="#_" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 md:hidden">tails<span class="text-indigo-600">.</span></a>
-                  <div class="flex flex-col items-start justify-end w-full space-x-6 text-center lg:space-x-8 md:mt-0 md:flex-row md:items-center" id="navi">
-                    <a href="#sales-point" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">当社の強み</a>
-                    <a href="#price" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">料金プラン</a>
-                    <a href="#flow" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">制作の流れ</a>
-                    <a href="#faq" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">よくある質問</a>
-                    <a href="#contact" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">お問い合わせ</a>
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <!-- ハンバーガーメニュー部分 -->
-              <div class="drawer">
+          <!-- ハンバーガーメニュー部分 -->
+          <div class="drawer">
 
-                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-                <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" id="drawer-check" class="drawer-hidden">
 
-                <!-- ハンバーガーアイコン -->
-                <label for="drawer-check" class="drawer-open"><span></span></label>
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer-check" class="drawer-open"><span></span></label>
 
-                <!-- メニュー -->
-                <nav class="drawer-content">
-                  <ul class="drawer-list">
-                    <li class="drawer-item">
-                      <a href="#sales-point" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">当社の強み</a>
-                    </li>
-                    <li class="drawer-item">
-                      <a href="#price" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">料金プラン</a>
-                    </li>
-                    <li class="drawer-item">
-                      <a href="#flow" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">制作の流れ</a>
-                    </li>
-                    <li class="drawer-item">
-                      <a href="#faq" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">よくある質問</a>
-                    </li>
-                    <li class="drawer-item">
-                      <a href="#contact" class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">お問い合わせ</a>
-                    </li>
-                    </ul><!-- /.drawer-list -->
-                </nav>
+            <!-- メニュー -->
+            <nav class="drawer-content">
+              <ul class="drawer-list">
+                <li class="drawer-item">
+                  <a href="#sales-point"
+                    class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">当社の強み</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#price"
+                    class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">料金プラン</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#flow"
+                    class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">制作の流れ</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#faq"
+                    class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">よくある質問</a>
+                </li>
+                <li class="drawer-item">
+                  <a href="#contact"
+                    class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 transition duration-700 hover:text-gray-400 lg:mx-3 md:text-center">お問い合わせ</a>
+                </li>
+              </ul><!-- /.drawer-list -->
+            </nav>
 
-              </div>
+          </div>
 
-              <!-- <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 fixed">
+          <!-- <div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 fixed">
                 <svg
                   class="w-6 h-6 text-gray-700"
                   x-show="!showMenu"
@@ -102,18 +120,19 @@
                 </svg>
               </div> -->
 
-            </div>
-          </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
 
-      <!-- Main Visual -->
-      <div class="video-container">
-          <div class="container max-w-lg　mx-auto text-left md:max-w-none md:text-center" id="top">
-              <video id="video1" class="video" autoplay loop poster="img/mv-sp.jpg">
-                <source src="movie/video1.mp4" type="video/mp4">
-              </video>
-                      <!-- カウントアップ -->
-        <div class="top-video-text w-full text-white text-2xl md:text-2xl lg:text-4xl font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:mt-12">
+    <!-- Main Visual -->
+    <div class="video-container">
+      <div class="container max-w-lg　mx-auto text-left md:max-w-none md:text-center" id="top">
+        <video id="video1" class="video" autoplay loop poster="img/mv-sp.jpg">
+          <source src="movie/video1.mp4" type="video/mp4">
+        </video>
+        <!-- カウントアップ -->
+        <div
+          class="top-video-text w-full text-white text-2xl md:text-2xl lg:text-4xl font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:mt-12">
           <div class="flex justify-center items-center">
             <!-- <div class="left-speech-balloon"></div> -->
             <div class="text-white  mx-2 flex h-20 md:h-14">
@@ -129,14 +148,15 @@
             </div>
             <!-- <div class="right-speech-balloon"></div> -->
           </div>
-          <div class="cost text-white text-center lg:text-2xl mx-auto mb-8 sm:p-2">
+          <div id="cost" class="cost text-white text-center lg:text-2xl mx-auto mb-8 sm:p-2">
             <!-- md:max-w-lg -->
             システム保守・管理費用
           </div>
           <!-- <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">システム保守・管理費用</span> -->
           <div class="flex mx-auto justify-center sm:mb-4 md:mb-0 h-auto">
             <div class="flex flex-col items-end">
-              <div class="text-white  mt-auto mb-2 md:mb-2 lg:mb-8 mr-2 max-w-lg md:text-center sm:text-md md:text-xl lg:text-2xl p-0">
+              <div
+                class="text-white  mt-auto mb-2 md:mb-2 lg:mb-8 mr-2 max-w-lg md:text-center sm:text-md md:text-xl lg:text-2xl p-0">
                 月々 ¥
               </div>
             </div>
@@ -149,16 +169,17 @@
               </div>
             </div>
           </div>
-          <h1 class="top-comment font-extrabold leading-10 tracking-tight mx-auto text-white text-center sm:leading-none text-xl md:text-xl lg:text-2xl sm:w-3/4 my-10">
+          <h1
+            class="top-comment font-extrabold leading-10 tracking-tight mx-auto text-white text-center sm:leading-none text-xl md:text-xl lg:text-2xl sm:w-3/4 my-10">
             <span class="inline">様々な業種で売上を増やしたマーケター監修の為、</span><br />
             <!-- sm:text-xs -->
-            <span class="inline">90%のクライアント様から</span><br class="md:hidden lg:hidden" /><span></span>売上＆客数＆問い合わせ数が上がった報告</span>
+            <span class="inline">90%のクライアント様から</span><br class="md:hidden lg:hidden" /><span>売上＆客数＆問い合わせ数が上がった報告</span>
             <!-- </span><br class="md:hidden lg:hidden" /><span> -->
             <!-- <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">システム保守・管理費用</span> -->
           </h1>
         </div>
         <!-- カウントアップ -->
-              <!-- <div class="top-video-text">
+        <!-- <div class="top-video-text">
                   <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left text-white md:text-center sm:leading-none md:text-6xl lg:text-7xl">
                     <span class="inline md:block">Start Crafting Your</span>
                     <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">Next Great Idea</span>
@@ -168,687 +189,794 @@
                     pages and so much more!
                   </div>
               </div> -->
-          </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Section 2  strengths-->
-    <section class="static　w-full bg-gray-100 pt-7 pb-7 md:pt-20 md:pb-24" id="sales-point">
+  <!-- Section 2  strengths-->
+  <section class="static　w-full bg-gray-100 pt-7 pb-7 md:pt-20 md:pb-24" id="sales-point">
 
-      <p class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-        POINT
+    <p
+      class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
+      POINT
+    </p>
+    <h2 class="fadeIn text-3xl font-bold tracking-tight text-center">
+      当社の強み
+    </h2>
+
+    <div
+      class="fadeIn box-border mt-10 flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <img src="img/img01.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20" />
+      </div>
+
+      <!-- Content -->
+      <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          世界に一つだけの、あなただけのデザインが可能。
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
+          テンプレートを使わず制作する為、他にはない世界に一つだけのデザインで、あなたのオリジナルホームページが実現します。
+        </p>
+      </div>
+      <!-- End  Content -->
+    </div>
+
+    <div
+      class="fadeIn box-border mt-10 flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+      <!-- Content -->
+      <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          業種実績有りのマーケターが監修
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
+          様々な業種で売上を増やしたマーケターが監修している為、90%のクライアント様から売上、客数、お問い合わせ件数が上がったとご報告いただきました。
+        </p>
+      </div>
+      <!-- End  Content -->
+
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+        <img src="img/img02.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32" />
+      </div>
+    </div>
+
+    <div
+      class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <img src="img/img03.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20" />
+      </div>
+      <!-- Content -->
+      <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          少数精鋭だからこそ、実現できる低価格
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
+          弊社は少数精鋭で行っている為、ホームページの価格は初期費用、ドメイン料金、サーバー料金すべて込みで月々1,9870円(税込)なので、他とは比べ物にならない程の安さを実現しています。
+        </p>
+      </div>
+      <!-- End  Content -->
+    </div>
+
+    <div
+      class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+      <!-- Content -->
+      <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          無料の安心サポート
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
+          有料のサポートが多い中、弊社は全て無料でサポートさせて頂いています。
+        </p>
+      </div>
+      <!-- End  Content -->
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+        <img src="img/img04.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32" />
+      </div>
+    </div>
+
+    <div
+      class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <img src="img/img05.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20" />
+      </div>
+
+      <!-- Content -->
+      <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          初期費用は全て無料
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
+          導入時にかかる面倒な初期費用は全て無料なので、自分だけのオリジナルホームページが管理費用だけで所持可能です。
+        </p>
+      </div>
+      <!-- End  Content -->
+    </div>
+
+    <div
+      class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+      <!-- Content -->
+      <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          完全訪問対応
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
+          お客様が、事業戦略や創意性の高いサービスなどを展開している場合ですと、より的確な企画制作をご提供させていただくためにも、顔を付き合わせてお付き合いさせていただく事が最善ですが、当社ではWebと電話のみにてやりとりを完結し、ご満足いただいている事例が多数ございます。
+          <br>しかし、オンラインは苦手・テレビ電話とかよく分からないという方の為に、ご希望者のみ1都3県(東京都・神奈川県・千葉県・埼玉県)の完全訪問対応をさせて頂いてます。
+        </p>
+      </div>
+      <!-- End  Content -->
+
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+        <img src="img/img06.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-20" />
+      </div>
+    </div>
+
+    <div
+      class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+      <!-- Image -->
+      <div
+        class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+        <img src="img/img07.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20" />
+      </div>
+
+      <!-- Content -->
+      <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
+        <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
+          さまざまなお支払い方法に対応<br>
+        </h2>
+        <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
+          現金・クレジットカード・ウォレットなど、さまざまなお支払い方法に対応しています。
+        </p>
+      </div>
+      <!-- End  Content -->
+    </div>
+
+  </section>
+
+  <!-- Pricing 1 -->
+  <section
+    class="box-border py-8 leading-7 text-gray-900 bg-white border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24"
+    id="price">
+    <div class="box-border max-w-6xl px-4 pb-12 mx-auto border-solid sm:px-6 md:px-6 lg:px-4">
+      <div class="flex flex-col items-center leading-7 text-center text-gray-900">
+
+        <p class="fadeIn text-xs font-bold text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
+          PRICE</p>
+        <h2
+          class="fadeIn box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-4xl">
+          料金プラン</h2>
+
+      </div>
+      <div
+        class="fadeIn-rotated grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-gray-300 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-4">
+
+        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+          <p class="leading-7 text-gray-900 border-0 border-solid">　</p>
+          <h3
+            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
+            エコノミー
+          </h3>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            最大10ページ
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            スマホ・PC対応
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            SEO対策★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
+            安心おまかせサポート<br>★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            訪問対応無(オンラインのみ)
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            最低契約日数36ヶ月
+          </p>
+          <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
+            <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
+              ¥14,870
+            </p>
+            <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
+              (税込)
+            </p>
+          </div>
+        </div>
+
+        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+          <p class="leading-7 text-gray-900 border-0 border-solid">
+            人気NO.1
+          </p>
+          <h3
+            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
+            スタンダード
+          </h3>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            最大10ページ
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            スマホ・タブレット・PC対応
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            SEO対策★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
+            安心おまかせサポート<br>★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            訪問対応有
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            最低契約日数36ヶ月
+          </p>
+          <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
+            <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
+              ¥19,870
+            </p>
+            <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
+              (税込)
+            </p>
+          </div>
+        </div>
+
+        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+          <p class="leading-7 text-gray-900 border-0 border-solid">
+            企業様向け
+          </p>
+          <h3
+            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
+            プレミアム
+          </h3>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            最大50ページ
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            スマホ・タブレット・PC対応
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            SEO対策★★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
+            安心おまかせサポート<br>★★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            訪問対応有
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            最低契約日数24ヶ月
+          </p>
+          <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
+            <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
+              ¥49,870
+            </p>
+            <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
+              (税込)
+            </p>
+          </div>
+        </div>
+
+        <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
+          <p class="leading-7 text-gray-900 border-0 border-solid">
+            企業様向け
+          </p>
+          <h3
+            class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
+            ファースト
+          </h3>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            最大100ページ
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            スマホ・タブレット・PC対応
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            SEO対策★★★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
+            安心おまかせサポート<br>★★★★★
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
+            訪問対応有
+          </p>
+          <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
+            最低契約日数24ヶ月
+          </p>
+          <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
+            <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
+              ¥198,700
+            </p>
+            <p　class="box-border my-0 ml-1 mr-0 text-xs text-center border-0 border-gray-200">
+              (税込)
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="pt-20 bg-gray-100" id="flow">
+    <div class="container max-w-6xl mx-auto">
+
+      <p
+        class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
+        FLOW
       </p>
       <h2 class="fadeIn text-3xl font-bold tracking-tight text-center">
-        当社の強み
+        制作の流れ
       </h2>
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid max-w-2xl mx-auto">
 
-      <div class="fadeIn box-border mt-10 flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-          <img src="img/img01.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"/>
-        </div>
-
-        <!-- Content -->
-        <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          世界に一つだけの、あなただけのデザインが可能。
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
-            テンプレートを使わず制作する為、他にはない世界に一つだけのデザインで、あなたのオリジナルホームページが実現します。
-          </p>
-        </div>
-        <!-- End  Content -->
-      </div>
-
-      <div class="fadeIn box-border mt-10 flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
-        <!-- Content -->
-        <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          業種実績有りのマーケターが監修
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
-          様々な業種で売上を増やしたマーケターが監修している為、90%のクライアント様から売上、客数、お問い合わせ件数が上がったとご報告いただきました。
-          </p>
-        </div>
-        <!-- End  Content -->
-
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-          <img src="img/img02.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32"/>
-        </div>
-      </div>
-
-      <div class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-          <img src="img/img03.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"/>
-        </div>
-        <!-- Content -->
-        <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          少数精鋭だからこそ、実現できる低価格
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
-          弊社は少数精鋭で行っている為、ホームページの価格は初期費用、ドメイン料金、サーバー料金すべて込みで月々1,9870円(税込)なので、他とは比べ物にならない程の安さを実現しています。
-          </p>
-        </div>
-        <!-- End  Content -->
-      </div>
-
-      <div class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
-        <!-- Content -->
-        <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          無料の安心サポート
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
-            有料のサポートが多い中、弊社は全て無料でサポートさせて頂いています。
-          </p>
-        </div>
-        <!-- End  Content -->
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-          <img src="img/img04.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32"/>
-        </div>
-      </div>
-
-      <div class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
-      <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-          <img src="img/img05.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"/>
-        </div>
-
-        <!-- Content -->
-        <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          初期費用は全て無料
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
-          導入時にかかる面倒な初期費用は全て無料なので、自分だけのオリジナルホームページが管理費用だけで所持可能です。
-          </p>
-        </div>
-        <!-- End  Content -->
-      </div>
-
-      <div class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
-        <!-- Content -->
-        <div class="box-border w-full text-black border-solid mt-10 md:w-1/2 md:pl-6 xl:pl-32">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-          完全訪問対応
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-sm">
-            お客様が、事業戦略や創意性の高いサービスなどを展開している場合ですと、より的確な企画制作をご提供させていただくためにも、顔を付き合わせてお付き合いさせていただく事が最善ですが、当社ではWebと電話のみにてやりとりを完結し、ご満足いただいている事例が多数ございます。 
-            <br>しかし、オンラインは苦手・テレビ電話とかよく分からないという方の為に、ご希望者のみ1都3県(東京都・神奈川県・千葉県・埼玉県)の完全訪問対応をさせて頂いてます。
-          </p>
-        </div>
-        <!-- End  Content -->
-
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-          <img src="img/img06.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-20"/>
-        </div>
-      </div>
-
-      <div class="fadeIn box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
-        <!-- Image -->
-        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-          <img src="img/img07.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"/>
-        </div>
-
-        <!-- Content -->
-        <div class="box-border order-first w-full text-black border-solid mt-10 md:w-1/2 md:pl-10 md:order-none">
-          <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-lg md:text-2xl">
-            さまざまなお支払い方法に対応<br>
-          </h2>
-          <p class="pt-4 pb-1 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-sm">
-            現金・クレジットカード・ウォレットなど、さまざまなお支払い方法に対応しています。
-          </p>
-        </div>
-        <!-- End  Content -->
-      </div>
-
-    </section>
-
-    <!-- Pricing 1 -->
-    <section class="box-border py-8 leading-7 text-gray-900 bg-white border-0 border-gray-200 border-solid sm:py-12 md:py-16 lg:py-24" id="price">
-      <div class="box-border max-w-6xl px-4 pb-12 mx-auto border-solid sm:px-6 md:px-6 lg:px-4">
-        <div class="flex flex-col items-center leading-7 text-center text-gray-900">
-
-          <p class="fadeIn text-xs font-bold text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">PRICE</p>
-          <h2 class="fadeIn box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black border-solid sm:text-4xl md:text-4xl">料金プラン</h2>
-
-        </div>
-        <div class="fadeIn-rotated grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-gray-300 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-4">
-
-          <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
-            <p class="leading-7 text-gray-900 border-0 border-solid">　</p>
-            <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
-              エコノミー
-            </h3>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              最大10ページ
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              スマホ・PC対応
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              SEO対策★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
-              安心おまかせサポート<br>★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              訪問対応無(オンラインのみ)
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              最低契約日数36ヶ月
-            </p>
-            <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-              <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
-                ¥14,870
-              </p>
-              <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
-              (税込)
-              </p>
+          <div class="fadeIn flex">
+            <div class="flex flex-col items-center mr-6">
+              <div class="w-px h-10 opacity-0 sm:h-full"></div>
+              <div>
+                <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
+                  1
+                </div>
+              </div>
+              <div class="w-px h-full bg-gray-300"></div>
             </div>
-          </div>
-
-          <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
-            <p class="leading-7 text-gray-900 border-0 border-solid">
-              人気NO.1
-            </p>
-            <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
-              スタンダード
-            </h3>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              最大10ページ
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              スマホ・タブレット・PC対応
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              SEO対策★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
-              安心おまかせサポート<br>★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              訪問対応有
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              最低契約日数36ヶ月
-            </p>
-            <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-              <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
-                ¥19,870
-              </p>
-              <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
-              (税込)
-              </p>
-            </div>
-          </div>
-
-          <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
-            <p class="leading-7 text-gray-900 border-0 border-solid">
-              企業様向け
-            </p>
-            <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
-              プレミアム
-            </h3>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              最大50ページ
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              スマホ・タブレット・PC対応
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              SEO対策★★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
-              安心おまかせサポート<br>★★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              訪問対応有
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              最低契約日数24ヶ月
-            </p>
-            <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-              <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
-                ¥49,870
-              </p>
-              <p class="box-border my-0 ml-1 mr-0 text-xs text-left border-0 border-gray-200">
-              (税込)
-              </p>
-            </div>
-          </div>
-
-          <div class="box-border py-8 text-center bg-white border-solid border border-gray-300 lg:mb-0 sm:py-8 md:py-12">
-            <p class="leading-7 text-gray-900 border-0 border-solid">
-              企業様向け
-            </p>
-            <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-2xl">
-              ファースト
-            </h3>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              最大100ページ
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              スマホ・タブレット・PC対応
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              SEO対策★★★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-14">
-              安心おまかせサポート<br>★★★★★
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10 py-2 bg-gray-100">
-              訪問対応有
-            </p>
-            <p class="mt-3 leading-7 text-gray-500 border-0 border-solid text-sm h-10">
-              最低契約日数24ヶ月
-            </p>
-            <div class="flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8">
-              <p class="box-border m-0 text-4xl font-semibold leading-normal text-center border-0 border-gray-200">
-                ¥198,700
-              </p>
-              <p　class="box-border my-0 ml-1 mr-0 text-xs text-center border-0 border-gray-200">
-                (税込)
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-        <!-- FLOW -->
-        <section class="pt-20 bg-gray-100" id="flow">
-          <div class="container max-w-6xl mx-auto">
-
-            <p class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-            FLOW
-            </p>
-            <h2 class="fadeIn text-3xl font-bold tracking-tight text-center">
-              制作の流れ
-            </h2>
-            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-              <div class="grid max-w-2xl mx-auto">
-
-                <div class="fadeIn flex">
-                  <div class="flex flex-col items-center mr-6">
-                    <div class="w-px h-10 opacity-0 sm:h-full"></div>
-                    <div>
-                      <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                        1
-                      </div>
-                    </div>
-                    <div class="w-px h-full bg-gray-300"></div>
-                  </div>
-                  <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                    <div class="sm:mr-5">
-                      <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g xmlns="http://www.w3.org/2000/svg"><g><path d="m297.846 322.122c25.618-23.789 41.094-42.337 51.749-62.018 12.717-23.489 18.64-49.068 18.64-80.499 0-2.524-.048-5.236-.147-8.29-.177-5.409-4.618-9.675-9.99-9.675-.11 0-.221.002-.331.005-5.521.181-9.851 4.801-9.671 10.321.093 2.836.138 5.335.138 7.64 0 57.847-21.552 88.445-63.998 127.862-46.292 42.986-50.09 97.125-50.387 103.963-7.741 54.493-43.007 76.817-70.925 79.37-33.08 3.031-61.788-17.136-73.135-51.366-14.255-42.965-59.613-233.308-36.487-324.468 12.617-49.726 53.737-84.517 109.997-93.064 54.185-8.236 125.292 10.238 161.977 70.066 2.887 4.707 9.044 6.183 13.754 3.298 4.708-2.887 6.185-9.044 3.298-13.754-18.49-30.154-46.387-53.474-80.673-67.442-31.528-12.843-67.527-17.081-101.361-11.943-29.954 4.551-57.21 16.146-78.821 33.533-23.58 18.969-40.026 44.692-47.56 74.387-12.904 50.867-5.345 128.313 3.267 184.325 10.518 68.395 25.871 127.99 33.624 151.357 7.253 21.881 20.41 39.554 38.049 51.108 14.196 9.298 30.968 14.242 47.952 14.242 2.644 0 5.296-.12 7.941-.362 21.296-1.947 41.553-11.695 57.039-27.447 16.987-17.278 28.034-41.342 31.947-69.59.052-.376.083-.755.092-1.135.01-.506 1.693-51.116 44.022-90.424z" fill="#000000" data-original="#000000" style=""/><path d="m243.431 263.585c-22.525 20.922-37.796 47.065-50.345 69.931-11.354 20.716-25.943 31.134-40.006 28.593-15.37-2.779-27.557-20.188-31.048-44.351-.789-5.466-5.862-9.247-11.328-8.468-5.467.79-9.258 5.862-8.469 11.328 4.743 32.825 23.304 56.836 47.285 61.173 2.668.482 5.324.721 7.962.721 20.181 0 39.213-13.962 53.142-39.379 11.794-21.49 26.08-46.001 46.417-64.891 31.88-29.589 51.237-50.994 51.237-98.637 0-52.894-24.681-92.016-69.491-110.155-18.473-7.492-39.957-10.737-60.49-9.14-22.513 1.751-42.629 9.073-58.172 21.173-14.393 11.198-23.855 25.802-28.122 43.401-3.607 14.824-2.603 27.773 3.161 40.756 10.904 24.526 32.934 22.025 49.018 20.198 2.388-.271 4.643-.527 6.878-.719 9.443-.799 18.514 3.214 24.255 10.722 4.445 5.836 6.348 13.053 5.361 20.321s-4.747 13.718-10.584 18.163c-4.395 3.346-5.245 9.621-1.899 14.014 3.345 4.395 9.619 5.244 14.015 1.899 10.086-7.679 16.581-18.824 18.288-31.382 1.707-12.566-1.584-25.042-9.28-35.149-9.924-12.974-25.574-19.902-41.852-18.517-2.519.215-5.02.499-7.439.774-17.436 1.98-23.943 1.762-28.481-8.446-3.93-8.851-4.548-17.458-2.003-27.914 3.221-13.289 10.08-23.865 20.97-32.338 24.549-19.112 65.203-22.931 98.866-9.28 47.111 19.07 57 60.349 57 91.618-.002 38.352-13.665 55.04-44.846 83.981z" fill="#000000" data-original="#000000" style=""/><path d="m474.999 326.183c5.523 0 10.001-4.478 10.001-10s-4.478-10-10.001-10c-108.076 0-196.002 87.843-196.002 195.817 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-96.946 78.953-175.817 176-175.817z" fill="#000000" data-original="#000000" style=""/><path d="m474.999 359.05c-78.896 0-143.082 64.127-143.082 142.949 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-67.794 55.214-122.948 123.08-122.948 5.523 0 10.001-4.478 10.001-10s-4.478-10.001-10.001-10.001z" fill="#000000" data-original="#000000" style=""/><path d="m474.999 411.918c-49.731 0-90.19 40.41-90.19 90.081 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-38.642 31.487-70.081 70.188-70.081 5.523 0 10.001-4.478 10.001-10s-4.478-10-10.001-10z" fill="#000000" data-original="#000000" style=""/><path d="m344.352 134.546.028.028c1.949 1.949 4.499 2.922 7.051 2.922 2.56 0 5.122-.981 7.078-2.937 3.906-3.905 3.892-10.251-.014-14.157-3.907-3.904-10.237-3.904-14.144 0-3.905 3.906-3.905 10.239.001 14.144z" fill="#000000" data-original="#000000" style=""/></g></g></g></svg>
-                        <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
-                          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>                      </div>
-                    </div>
-                    <div>
-                      <p class="text-xl font-semibold sm:text-base">STEP1　訪問・ヒヤリング</p>
-                      <p class="text-sm text-gray-700">
-                        ※関東以外の方またはエコノミープランの方はオンラインヒヤリングになります。
-                      </p>
-                    </div>
-                  </div>
+            <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+              <div class="sm:mr-5">
+                <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                    <g>
+                      <g xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                          <path
+                            d="m297.846 322.122c25.618-23.789 41.094-42.337 51.749-62.018 12.717-23.489 18.64-49.068 18.64-80.499 0-2.524-.048-5.236-.147-8.29-.177-5.409-4.618-9.675-9.99-9.675-.11 0-.221.002-.331.005-5.521.181-9.851 4.801-9.671 10.321.093 2.836.138 5.335.138 7.64 0 57.847-21.552 88.445-63.998 127.862-46.292 42.986-50.09 97.125-50.387 103.963-7.741 54.493-43.007 76.817-70.925 79.37-33.08 3.031-61.788-17.136-73.135-51.366-14.255-42.965-59.613-233.308-36.487-324.468 12.617-49.726 53.737-84.517 109.997-93.064 54.185-8.236 125.292 10.238 161.977 70.066 2.887 4.707 9.044 6.183 13.754 3.298 4.708-2.887 6.185-9.044 3.298-13.754-18.49-30.154-46.387-53.474-80.673-67.442-31.528-12.843-67.527-17.081-101.361-11.943-29.954 4.551-57.21 16.146-78.821 33.533-23.58 18.969-40.026 44.692-47.56 74.387-12.904 50.867-5.345 128.313 3.267 184.325 10.518 68.395 25.871 127.99 33.624 151.357 7.253 21.881 20.41 39.554 38.049 51.108 14.196 9.298 30.968 14.242 47.952 14.242 2.644 0 5.296-.12 7.941-.362 21.296-1.947 41.553-11.695 57.039-27.447 16.987-17.278 28.034-41.342 31.947-69.59.052-.376.083-.755.092-1.135.01-.506 1.693-51.116 44.022-90.424z"
+                            fill="#000000" data-original="#000000" style="" />
+                          <path
+                            d="m243.431 263.585c-22.525 20.922-37.796 47.065-50.345 69.931-11.354 20.716-25.943 31.134-40.006 28.593-15.37-2.779-27.557-20.188-31.048-44.351-.789-5.466-5.862-9.247-11.328-8.468-5.467.79-9.258 5.862-8.469 11.328 4.743 32.825 23.304 56.836 47.285 61.173 2.668.482 5.324.721 7.962.721 20.181 0 39.213-13.962 53.142-39.379 11.794-21.49 26.08-46.001 46.417-64.891 31.88-29.589 51.237-50.994 51.237-98.637 0-52.894-24.681-92.016-69.491-110.155-18.473-7.492-39.957-10.737-60.49-9.14-22.513 1.751-42.629 9.073-58.172 21.173-14.393 11.198-23.855 25.802-28.122 43.401-3.607 14.824-2.603 27.773 3.161 40.756 10.904 24.526 32.934 22.025 49.018 20.198 2.388-.271 4.643-.527 6.878-.719 9.443-.799 18.514 3.214 24.255 10.722 4.445 5.836 6.348 13.053 5.361 20.321s-4.747 13.718-10.584 18.163c-4.395 3.346-5.245 9.621-1.899 14.014 3.345 4.395 9.619 5.244 14.015 1.899 10.086-7.679 16.581-18.824 18.288-31.382 1.707-12.566-1.584-25.042-9.28-35.149-9.924-12.974-25.574-19.902-41.852-18.517-2.519.215-5.02.499-7.439.774-17.436 1.98-23.943 1.762-28.481-8.446-3.93-8.851-4.548-17.458-2.003-27.914 3.221-13.289 10.08-23.865 20.97-32.338 24.549-19.112 65.203-22.931 98.866-9.28 47.111 19.07 57 60.349 57 91.618-.002 38.352-13.665 55.04-44.846 83.981z"
+                            fill="#000000" data-original="#000000" style="" />
+                          <path
+                            d="m474.999 326.183c5.523 0 10.001-4.478 10.001-10s-4.478-10-10.001-10c-108.076 0-196.002 87.843-196.002 195.817 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-96.946 78.953-175.817 176-175.817z"
+                            fill="#000000" data-original="#000000" style="" />
+                          <path
+                            d="m474.999 359.05c-78.896 0-143.082 64.127-143.082 142.949 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-67.794 55.214-122.948 123.08-122.948 5.523 0 10.001-4.478 10.001-10s-4.478-10.001-10.001-10.001z"
+                            fill="#000000" data-original="#000000" style="" />
+                          <path
+                            d="m474.999 411.918c-49.731 0-90.19 40.41-90.19 90.081 0 5.523 4.478 10 10.001 10s10.001-4.478 10.001-10c0-38.642 31.487-70.081 70.188-70.081 5.523 0 10.001-4.478 10.001-10s-4.478-10-10.001-10z"
+                            fill="#000000" data-original="#000000" style="" />
+                          <path
+                            d="m344.352 134.546.028.028c1.949 1.949 4.499 2.922 7.051 2.922 2.56 0 5.122-.981 7.078-2.937 3.906-3.905 3.892-10.251-.014-14.157-3.907-3.904-10.237-3.904-14.144 0-3.905 3.906-3.905 10.239.001 14.144z"
+                            fill="#000000" data-original="#000000" style="" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                 </div>
-
-                <div class="flex fadeIn">
-                  <div class="flex flex-col items-center mr-6">
-                    <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
-                    <div>
-                      <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                        2
-                      </div>
-                    </div>
-                    <div class="w-px h-full bg-gray-300"></div>
-                  </div>
-                  <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                    <div class="sm:mr-5">
-                      <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><g id="outline"><path d="M136,120H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z"/><path d="M136,168H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z"/><path d="M136,216H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z"/><path d="M136,264H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z"/><path d="M136,312h64a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z"/><path d="M452.132,205.015a24.024,24.024,0,0,0-32.841,8.571L400,246.5V48a8,8,0,0,0-8-8H331.314s-24.038-24.48-25-23.656A7.976,7.976,0,0,0,304,16H72a8,8,0,0,0-8,8V49.013a32,32,0,0,0,0,61.974v18.026a32,32,0,0,0,0,61.974v18.026a32,32,0,0,0,0,61.974v10.026a32,32,0,0,0,0,61.974V392a8,8,0,0,0,8,8h8v24a8,8,0,0,0,8,8H291.292l-5.482,9.354a7.938,7.938,0,0,0-.981,2.721c-.008.046-.021.085-.028.132l-.02.131,0,.03-6.4,42.44a8,8,0,0,0,12.817,7.511L325.226,467.9c2.18-1.693,3.245-2.729,3.076-4.119L346.926,432H392a8,8,0,0,0,8-8V341.438l60.7-103.583A24.027,24.027,0,0,0,452.132,205.015ZM437.977,217.98a8,8,0,0,1,8.922,11.786l-4.045,6.9-13.8-8.09,4.046-6.9A7.944,7.944,0,0,1,437.977,217.98ZM317.462,450.632l-13.8-8.09L408.826,263.089l13.8,8.09ZM312,43.314,340.686,72H312Zm104.916,205.97,4.044-6.9,13.805,8.09-4.045,6.9ZM384,56V272a8.041,8.041,0,0,0,.152,1.546L368,301.108V80a7.978,7.978,0,0,0-2.336-5.649l-.007-.008L347.314,56ZM80,32H296V80a8,8,0,0,0,8,8h48V328.41L319.422,384H80V342.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,325.85V270.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,253.85V190.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,173.85V110.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,93.85ZM56,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,80Zm0,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,160Zm0,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,240Zm0,72a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,312ZM96,416V400H310.045l-9.377,16Zm202.861,42.276,7.219,4.231-8.9,6.908ZM384,416H356.3L384,368.739Z"/></g></svg>
-                        <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
-                          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-xl font-semibold sm:text-base">STEP2　企画・設計</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex fadeIn">
-                  <div class="flex flex-col items-center mr-6">
-                    <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
-                    <div>
-                      <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                        3
-                      </div>
-                    </div>
-                    <div class="w-px h-full bg-gray-300"></div>
-                  </div>
-                  <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                    <div class="sm:mr-5">
-                      <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
-                        <svg class="w-12 h-12" id="Layer_1" height="512" viewBox="0 0 75 75" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m58.8 22.105a3.171 3.171 0 0 0 -3.17-3.17h-36.245a3.18 3.18 0 0 0 -3.18 3.17v26.38h42.595zm-3 23.13a.755.755 0 0 1 -.75.75h-35.095a.755.755 0 0 1 -.75-.75v-22.55a.749.749 0 0 1 .75-.75h35.09a.749.749 0 0 1 .75.75z"/><path d="m61.465 51.555-1.59-1.57h-44.75l-1.59 1.57a2.638 2.638 0 0 0 1.86 4.51h44.22a2.638 2.638 0 0 0 1.85-4.51zm-25.41 3.02h-2.69a.75.75 0 1 1 0-1.5h2.69a.75.75 0 0 1 0 1.5zm5.58 0h-2.69a.75.75 0 0 1 0-1.5h2.69a.75.75 0 1 1 0 1.5z"/></svg>                        <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
-                          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>                      </div>
-                    </div>
-                    <div>
-                      <p class="text-xl font-semibold sm:text-base">STEP3　実装</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex fadeIn">
-                  <div class="flex flex-col items-center mr-6">
-                    <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
-                    <div>
-                      <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                        4
-                      </div>
-                    </div>
-                    <div class="w-px h-full bg-gray-300"></div>
-                  </div>
-                  <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                    <div class="sm:mr-5">
-                      <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
-                        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" id="Icons" viewBox="0 0 74 74"><path d="M36.994,72a35,35,0,0,1-.213-70h.226a35,35,0,0,1,.212,70Zm-.2-68a33.06,33.06,0,1,0,.213,0Z"/><path d="M36.994,72a35,35,0,0,1-.213-70h.226a35,35,0,0,1,.212,70Zm-.2-68a33.06,33.06,0,1,0,.213,0Z"/><path d="M37.164,72C27.657,72,20.123,56.7,20,37.107,19.878,17.481,27.248,2.061,36.781,2h.055C46.343,2,53.877,17.3,54,36.893,54.122,56.519,46.752,71.939,37.219,72ZM36.793,4c-8.13.051-14.9,15.207-14.793,33.094C22.112,54.951,29.054,70,37.166,70h.041c8.13-.051,14.9-15.207,14.793-33.094C51.888,19.049,44.946,4,36.834,4Z"/><path d="M37.213,72a1,1,0,0,1-1-.994l-.426-68A1,1,0,0,1,36.781,2h.006a1,1,0,0,1,1,.994l.426,68A1,1,0,0,1,37.219,72Z"/><path d="M3,38.213a1,1,0,0,1-.006-2l68-.427H71a1,1,0,0,1,.006,2l-68,.427Z"/><path d="M8.038,20.181a1,1,0,0,1-.006-2l57.7-.362h.006a1,1,0,0,1,.006,2l-57.7.362Z"/><path d="M8.264,56.181a1,1,0,0,1-.006-2l57.7-.362h.006a1,1,0,0,1,.006,2l-57.7.362Z"/></svg>
-                        <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
-                          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-xl font-semibold sm:text-base">STEP4　公開</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex fadeIn">
-                  <div class="flex flex-col items-center mr-6">
-                    <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
-                    <div>
-                      <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                        5
-                      </div>
-                    </div>
-                    <div class="w-px h-full opacity-0"></div>
-                  </div>
-                  <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-                    <div class="sm:mr-5">
-                      <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
-                        <svg class="w-10 h-10" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m316 76c0-33.084-26.916-60-60-60s-60 26.916-60 60 26.916 60 60 60 60-26.916 60-60zm-60 40c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z"/><path d="m346 266v-40c0-49.626-40.374-90-90-90s-90 40.374-90 90v40c0 5.523 4.478 10 10 10h160c5.522 0 10-4.477 10-10zm-20-10h-140v-30c0-38.598 31.402-70 70-70s70 31.402 70 70z"/><path d="m71.858 408.114 48.142 24.067v53.819c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-127.22c0-31.783-23.452-59.203-53.391-62.423-.795-.15-38.649-2.971-56.948-21.258l-27.38-27.379c-7.556-7.558-17.6-11.72-28.281-11.72v-80c0-22.056-17.944-40-40-40s-40 17.944-40 40v135.84c0 49.212 27.798 94.239 71.858 116.274zm-51.858-252.114c0-11.028 8.972-20 20-20s20 8.972 20 20v85.361c-12.196 7.052-20 20.2-20 34.639 0 10.68 4.162 20.723 11.719 28.28l51.21 51.22c3.903 3.905 10.236 3.907 14.142.001 3.905-3.905 3.906-10.236.001-14.142l-51.21-51.221c-3.78-3.779-5.862-8.8-5.862-14.138 0-8.464 5.357-16.044 13.332-18.861.003-.001.006-.003.009-.004h.001c6.88-2.439 15.066-1.005 20.797 4.726l27.383 27.383c18.65 18.637 45.831 23.879 68.836 26.986.037.004.075.009.113.013 19.923 2.142 35.529 20.827 35.529 42.537v117.22h-86v-50c0-3.788-2.141-7.251-5.528-8.944l-53.669-26.83c-37.504-18.757-60.803-56.456-60.803-98.386z"/><circle cx="459" cy="384" r="10"/><path d="m472 116c-22.056 0-40 17.944-40 40v80c-10.681 0-20.725 4.162-28.281 11.719l-27.377 27.377c-15.96 15.949-41.848 18.608-56.951 21.262-29.939 3.22-53.391 30.639-53.391 62.422v127.22c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-53.819l32.73-16.362c4.939-2.47 6.942-8.476 4.473-13.417-2.469-4.939-8.474-6.942-13.416-4.473l-38.259 19.125c-3.387 1.695-5.528 5.158-5.528 8.946v50h-86v-117.22c0-21.71 15.606-40.395 35.529-42.538.038-.004.076-.008.113-.013 23.361-3.155 50.206-8.368 68.839-26.988l27.38-27.38c5.724-5.724 13.913-7.166 20.797-4.726h.001c.003.001.006.003.009.004 7.975 2.817 13.332 10.397 13.332 18.861 0 5.338-2.082 10.359-5.861 14.14l-51.21 51.22c-3.905 3.906-3.904 10.237.001 14.142 3.904 3.904 10.237 3.905 14.142-.001l51.21-51.22c7.556-7.558 11.718-17.601 11.718-28.281 0-14.439-7.804-27.587-20-34.639v-85.361c0-11.028 8.972-20 20-20s20 8.972 20 20v135.84c0 18.296-4.617 36.46-13.353 52.528-2.639 4.852-.844 10.924 4.009 13.562 4.851 2.637 10.924.843 13.562-4.009 10.325-18.99 15.782-40.458 15.782-62.081v-135.84c0-22.056-17.944-40-40-40z"/></g></svg>
-                        <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
-                          <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-xl font-semibold sm:text-base">STEP5　サポート開始</p>
-                    </div>
-                  </div>
-                </div>
-                
+              </div>
+              <div>
+                <p class="text-xl font-semibold sm:text-base">STEP1　訪問・ヒヤリング</p>
+                <p class="text-sm text-gray-700">
+                  ※関東以外の方またはエコノミープランの方はオンラインヒヤリングになります。
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        
 
-        <!-- FAQ -->
-        <section class="relative py-16 bg-white min-w-screen animation-fade animation-delay" id="faq">
-          <div class="container px-0 px-8 mx-auto sm:px-12 xl:px-5">
-            <p class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-              FAQ
-            </p>
-            <h2 class="fadeIn text-3xl font-bold tracking-tight text-center">
-              よくある質問
-            </h2>
-            <div class="fadeIn-rotated w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-              <h3 class="text-lg font-bold text-blue-300 sm:text-xl md:text-2xl">
-                Q.見積もりは無料ですか？
-              </h3>
-              <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
-                A.もちろん無料です。ご相談からお見積・ご提案までの料金は発生致しません。
-              </p>
+          <div class="flex fadeIn">
+            <div class="flex flex-col items-center mr-6">
+              <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
+              <div>
+                <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
+                  2
+                </div>
+              </div>
+              <div class="w-px h-full bg-gray-300"></div>
             </div>
-            <div class="fadeIn-rotated w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-              <h3 class="text-lg font-bold text-blue-300 sm:text-xl md:text-2xl">
-                Q.相談や打ち合わせはどのように行いますか？
-              </h3>
-              <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
-                A.ご訪問対応地域であれば、お客様のもとへお伺い致します。対応エリア外の方は、基本的に電話やメール、LINE。Zoom・Skypeなどでお打ち合わせさせて頂きますが、案件の内容や条件によって出張可能な場合もございます。お気軽にお問い合わせください。
-              </p>
+            <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+              <div class="sm:mr-5">
+                <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512"
+                    height="512">
+                    <g id="outline">
+                      <path d="M136,120H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z" />
+                      <path d="M136,168H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z" />
+                      <path d="M136,216H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z" />
+                      <path d="M136,264H312a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z" />
+                      <path d="M136,312h64a8,8,0,0,0,0-16H136a8,8,0,0,0,0,16Z" />
+                      <path
+                        d="M452.132,205.015a24.024,24.024,0,0,0-32.841,8.571L400,246.5V48a8,8,0,0,0-8-8H331.314s-24.038-24.48-25-23.656A7.976,7.976,0,0,0,304,16H72a8,8,0,0,0-8,8V49.013a32,32,0,0,0,0,61.974v18.026a32,32,0,0,0,0,61.974v18.026a32,32,0,0,0,0,61.974v10.026a32,32,0,0,0,0,61.974V392a8,8,0,0,0,8,8h8v24a8,8,0,0,0,8,8H291.292l-5.482,9.354a7.938,7.938,0,0,0-.981,2.721c-.008.046-.021.085-.028.132l-.02.131,0,.03-6.4,42.44a8,8,0,0,0,12.817,7.511L325.226,467.9c2.18-1.693,3.245-2.729,3.076-4.119L346.926,432H392a8,8,0,0,0,8-8V341.438l60.7-103.583A24.027,24.027,0,0,0,452.132,205.015ZM437.977,217.98a8,8,0,0,1,8.922,11.786l-4.045,6.9-13.8-8.09,4.046-6.9A7.944,7.944,0,0,1,437.977,217.98ZM317.462,450.632l-13.8-8.09L408.826,263.089l13.8,8.09ZM312,43.314,340.686,72H312Zm104.916,205.97,4.044-6.9,13.805,8.09-4.045,6.9ZM384,56V272a8.041,8.041,0,0,0,.152,1.546L368,301.108V80a7.978,7.978,0,0,0-2.336-5.649l-.007-.008L347.314,56ZM80,32H296V80a8,8,0,0,0,8,8h48V328.41L319.422,384H80V342.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,325.85V270.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,253.85V190.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,173.85V110.988a31.974,31.974,0,0,0,22.991-22.994,8,8,0,0,0-15.5-3.988A15.948,15.948,0,0,1,80,93.85ZM56,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,80Zm0,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,160Zm0,80a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,240Zm0,72a16,16,0,0,1,8-13.835v27.67A16,16,0,0,1,56,312ZM96,416V400H310.045l-9.377,16Zm202.861,42.276,7.219,4.231-8.9,6.908ZM384,416H356.3L384,368.739Z" />
+                    </g>
+                  </svg>
+                  <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </div>
+              </div>
+              <div>
+                <p class="text-xl font-semibold sm:text-base">STEP2　企画・設計</p>
+              </div>
             </div>
           </div>
-        </section>
+
+          <div class="flex fadeIn">
+            <div class="flex flex-col items-center mr-6">
+              <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
+              <div>
+                <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
+                  3
+                </div>
+              </div>
+              <div class="w-px h-full bg-gray-300"></div>
+            </div>
+            <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+              <div class="sm:mr-5">
+                <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
+                  <svg class="w-12 h-12" id="Layer_1" height="512" viewBox="0 0 75 75" width="512"
+                    xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+                    <path
+                      d="m58.8 22.105a3.171 3.171 0 0 0 -3.17-3.17h-36.245a3.18 3.18 0 0 0 -3.18 3.17v26.38h42.595zm-3 23.13a.755.755 0 0 1 -.75.75h-35.095a.755.755 0 0 1 -.75-.75v-22.55a.749.749 0 0 1 .75-.75h35.09a.749.749 0 0 1 .75.75z" />
+                    <path
+                      d="m61.465 51.555-1.59-1.57h-44.75l-1.59 1.57a2.638 2.638 0 0 0 1.86 4.51h44.22a2.638 2.638 0 0 0 1.85-4.51zm-25.41 3.02h-2.69a.75.75 0 1 1 0-1.5h2.69a.75.75 0 0 1 0 1.5zm5.58 0h-2.69a.75.75 0 0 1 0-1.5h2.69a.75.75 0 1 1 0 1.5z" />
+                  </svg>
+                  <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </div>
+              </div>
+              <div>
+                <p class="text-xl font-semibold sm:text-base">STEP3　実装</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex fadeIn">
+            <div class="flex flex-col items-center mr-6">
+              <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
+              <div>
+                <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
+                  4
+                </div>
+              </div>
+              <div class="w-px h-full bg-gray-300"></div>
+            </div>
+            <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+              <div class="sm:mr-5">
+                <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
+                  <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" id="Icons" viewBox="0 0 74 74">
+                    <path
+                      d="M36.994,72a35,35,0,0,1-.213-70h.226a35,35,0,0,1,.212,70Zm-.2-68a33.06,33.06,0,1,0,.213,0Z" />
+                    <path
+                      d="M36.994,72a35,35,0,0,1-.213-70h.226a35,35,0,0,1,.212,70Zm-.2-68a33.06,33.06,0,1,0,.213,0Z" />
+                    <path
+                      d="M37.164,72C27.657,72,20.123,56.7,20,37.107,19.878,17.481,27.248,2.061,36.781,2h.055C46.343,2,53.877,17.3,54,36.893,54.122,56.519,46.752,71.939,37.219,72ZM36.793,4c-8.13.051-14.9,15.207-14.793,33.094C22.112,54.951,29.054,70,37.166,70h.041c8.13-.051,14.9-15.207,14.793-33.094C51.888,19.049,44.946,4,36.834,4Z" />
+                    <path
+                      d="M37.213,72a1,1,0,0,1-1-.994l-.426-68A1,1,0,0,1,36.781,2h.006a1,1,0,0,1,1,.994l.426,68A1,1,0,0,1,37.219,72Z" />
+                    <path d="M3,38.213a1,1,0,0,1-.006-2l68-.427H71a1,1,0,0,1,.006,2l-68,.427Z" />
+                    <path d="M8.038,20.181a1,1,0,0,1-.006-2l57.7-.362h.006a1,1,0,0,1,.006,2l-57.7.362Z" />
+                    <path d="M8.264,56.181a1,1,0,0,1-.006-2l57.7-.362h.006a1,1,0,0,1,.006,2l-57.7.362Z" />
+                  </svg>
+                  <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </div>
+              </div>
+              <div>
+                <p class="text-xl font-semibold sm:text-base">STEP4　公開</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex fadeIn">
+            <div class="flex flex-col items-center mr-6">
+              <div class="w-px h-10 bg-gray-300 sm:h-full"></div>
+              <div>
+                <div class="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
+                  5
+                </div>
+              </div>
+              <div class="w-px h-full opacity-0"></div>
+            </div>
+            <div class="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+              <div class="sm:mr-5">
+                <div class="neumorphism flex items-center justify-center w-16 h-16 my-3 rounded-full sm:w-24 sm:h-24">
+                  <svg class="w-10 h-10" id="Capa_1" enable-background="new 0 0 512 512" height="512"
+                    viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path
+                        d="m316 76c0-33.084-26.916-60-60-60s-60 26.916-60 60 26.916 60 60 60 60-26.916 60-60zm-60 40c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z" />
+                      <path
+                        d="m346 266v-40c0-49.626-40.374-90-90-90s-90 40.374-90 90v40c0 5.523 4.478 10 10 10h160c5.522 0 10-4.477 10-10zm-20-10h-140v-30c0-38.598 31.402-70 70-70s70 31.402 70 70z" />
+                      <path
+                        d="m71.858 408.114 48.142 24.067v53.819c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-127.22c0-31.783-23.452-59.203-53.391-62.423-.795-.15-38.649-2.971-56.948-21.258l-27.38-27.379c-7.556-7.558-17.6-11.72-28.281-11.72v-80c0-22.056-17.944-40-40-40s-40 17.944-40 40v135.84c0 49.212 27.798 94.239 71.858 116.274zm-51.858-252.114c0-11.028 8.972-20 20-20s20 8.972 20 20v85.361c-12.196 7.052-20 20.2-20 34.639 0 10.68 4.162 20.723 11.719 28.28l51.21 51.22c3.903 3.905 10.236 3.907 14.142.001 3.905-3.905 3.906-10.236.001-14.142l-51.21-51.221c-3.78-3.779-5.862-8.8-5.862-14.138 0-8.464 5.357-16.044 13.332-18.861.003-.001.006-.003.009-.004h.001c6.88-2.439 15.066-1.005 20.797 4.726l27.383 27.383c18.65 18.637 45.831 23.879 68.836 26.986.037.004.075.009.113.013 19.923 2.142 35.529 20.827 35.529 42.537v117.22h-86v-50c0-3.788-2.141-7.251-5.528-8.944l-53.669-26.83c-37.504-18.757-60.803-56.456-60.803-98.386z" />
+                      <circle cx="459" cy="384" r="10" />
+                      <path
+                        d="m472 116c-22.056 0-40 17.944-40 40v80c-10.681 0-20.725 4.162-28.281 11.719l-27.377 27.377c-15.96 15.949-41.848 18.608-56.951 21.262-29.939 3.22-53.391 30.639-53.391 62.422v127.22c0 5.523 4.478 10 10 10h106c5.522 0 10-4.477 10-10v-53.819l32.73-16.362c4.939-2.47 6.942-8.476 4.473-13.417-2.469-4.939-8.474-6.942-13.416-4.473l-38.259 19.125c-3.387 1.695-5.528 5.158-5.528 8.946v50h-86v-117.22c0-21.71 15.606-40.395 35.529-42.538.038-.004.076-.008.113-.013 23.361-3.155 50.206-8.368 68.839-26.988l27.38-27.38c5.724-5.724 13.913-7.166 20.797-4.726h.001c.003.001.006.003.009.004 7.975 2.817 13.332 10.397 13.332 18.861 0 5.338-2.082 10.359-5.861 14.14l-51.21 51.22c-3.905 3.906-3.904 10.237.001 14.142 3.904 3.904 10.237 3.905 14.142-.001l51.21-51.22c7.556-7.558 11.718-17.601 11.718-28.281 0-14.439-7.804-27.587-20-34.639v-85.361c0-11.028 8.972-20 20-20s20 8.972 20 20v135.84c0 18.296-4.617 36.46-13.353 52.528-2.639 4.852-.844 10.924 4.009 13.562 4.851 2.637 10.924.843 13.562-4.009 10.325-18.99 15.782-40.458 15.782-62.081v-135.84c0-22.056-17.944-40-40-40z" />
+                    </g>
+                  </svg>
+                  <!-- <svg class="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16" stroke="currentColor" viewBox="0 0 52 52"> -->
+                  <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                </div>
+              </div>
+              <div>
+                <p class="text-xl font-semibold sm:text-base">STEP5　サポート開始</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-        <!------------------------- お問い合わせフォーム ↓--------------------->
-        <section class="static　w-full bg-gray-100 pt-7 pb-7 md:pt-20 md:pb-24" id="contact">
-          <p class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-          CONTACT
-          </p>
-          <h2 class="fadeIn text-3xl mb-12 font-bold tracking-tight text-center">
+  <!-- FAQ -->
+  <section class="relative py-16 bg-white min-w-screen animation-fade animation-delay" id="faq">
+    <div class="container px-0 px-8 mx-auto sm:px-12 xl:px-5">
+      <p
+        class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
+        FAQ
+      </p>
+      <h2 class="fadeIn text-3xl font-bold tracking-tight text-center">
+        よくある質問
+      </h2>
+      <div
+        class="fadeIn-rotated w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+        <h3 class="text-lg font-bold text-blue-300 sm:text-xl md:text-2xl">
+          Q.見積もりは無料ですか？
+        </h3>
+        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+          A.もちろん無料です。ご相談からお見積・ご提案までの料金は発生致しません。
+        </p>
+      </div>
+      <div
+        class="fadeIn-rotated w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
+        <h3 class="text-lg font-bold text-blue-300 sm:text-xl md:text-2xl">
+          Q.相談や打ち合わせはどのように行いますか？
+        </h3>
+        <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+          A.ご訪問対応地域であれば、お客様のもとへお伺い致します。対応エリア外の方は、基本的に電話やメール、LINE。Zoom・Skypeなどでお打ち合わせさせて頂きますが、案件の内容や条件によって出張可能な場合もございます。お気軽にお問い合わせください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------------------- お問い合わせフォーム ↓--------------------->
+  <section class="static　w-full bg-gray-100 pt-7 pb-7 md:pt-20 md:pb-24" id="contact">
+    <p
+      class="fadeIn text-xs font-bold text-center text-blue-300 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
+      CONTACT
+    </p>
+    <h2 class="fadeIn text-3xl mb-12 font-bold tracking-tight text-center">
+      お問い合わせ
+    </h2>
+
+    <div class="fadeIn mx-auto max-w-7xl rounded">
+      <div class="flex flex-col lg:flex-row justify-center">
+
+        <div class="w-full bg-white lg:w-10/12 xl:w-9/12">
+          <div class="flex flex-col items-start justify-start w-full h-full p-5 lg:p-16 xl:p-24">
+
+            <div class="relative w-full mt-10 space-y-8">
+              <form id="my-form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSepbhWQ2-zvboaLtI-TMEFf7Fj2rMxacDIIM_gvrAHpLXtkbA/formResponse?embedded=true">
+                <div class="relative">
+                  <label class="font-medium text-gray-900">会社名</label>
+                  <input name="entry.1689887111" type="text"
+                    class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    placeholder="会社名" />
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">氏名</label>
+                  <input name="entry.2058545251" type="text"
+                    class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    placeholder="氏名" required />
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">ふりがな</label>
+                  <input name="entry.1021238983" type="text"
+                    class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    placeholder="ふりがな" required />
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">メールアドレス</label>
+                  <input name="entry.1321957010" type="text"
+                    class="block w-full px-4 py-4 mt-2 text-xmd placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    placeholder="メールアドレス" required />
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">電話番号</label>
+                  <input name="entry.537347965" type="text"
+                    class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    placeholder="電話番号" required />
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">件名</label>
+                  <div class="radio-button max-w-screen-xl mx-auto py-4 flex flex-col items-center">
+                    <div class="flex w-full relative">
+                      <input name="entry.541335101" type="radio" id="option0" class="appearance-none" value="新規サイト制作" />
+                      <label for="option0"
+                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">新規サイト制作</label>
+
+                      <input name="entry.541335101" type="radio" id="option1" class="appearance-none"
+                        value="既存サイトリニューアル" />
+                      <label for="option1"
+                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">既存サイト<br>リニューアル</label>
+
+                      <input name="entry.541335101" type="radio" id="option2" class="appearance-none" value="LPページ制作" />
+                      <label for="option2"
+                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">LPページ制作</label>
+
+                      <input name="entry.541335101" type="radio" id="option3" class="appearance-none" value="その他" />
+                      <label for="option3"
+                        class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">その他</label>
+
+                      <div
+                        class="radio-focus z-10 w-1/4 flex items-center justify-center truncate select-none  rounded-full p-0 h-full absolute transform transition-transform tabAnim">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <label class="font-medium text-gray-900">お問い合わせ内容</label>
+                  <textarea name="entry.1083006528" type="text"
+                    class="block w-full h-60 px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50"
+                    required></textarea>
+                </div>
+                <div class="relative pt-4">
+                  <label class="font-medium text-gray-900">同意内容</label>
+                  <div class="ml-2">
+                    <div class="flex mt-1">
+                      <div class="ml-3 text-sm">
+                        <div class="flex items-center h-5">
+                          <input id="プライバシーポリシー" name="entry.660928619" value="プライバシーポリシー" required type="checkbox"
+                            class="focus:ring-indigo-500 h-5 w-5 text-indigo-600 border-gray-300 rounded">
+                          <label for="プライバシーポリシー" class="pl-2 font-medium text-gray-700">プライバシーポリシー</label>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex mt-1">
+                      <div class="ml-3 text-sm">
+                        <div class="flex items-center h-5">
+                          <input id="利用規約" name="entry.660928619" value="利用規約" required type="checkbox"
+                            class="focus:ring-indigo-500 h-5 w-5 text-indigo-600 border-gray-300 rounded">
+                          <label for="利用規約" class="pl-2 font-medium text-gray-700">利用規約</label>
+                        </div>
+                        <div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ------------------------------------------- -->
+                  </div>
+                  <div class="form-submit relative pt-6">
+                    <button type="submit"
+                      class="btn inline-block w-full px-5 py-4 text-xl font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-500 ease">送信</button>
+                  </div>
+                </div>
+              </form>
+              <!-- 送信後メッセージ -->
+              <p class="end-message">お問い合わせありがとうございました</p>
+              <p class="false-message">送信失敗です</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!------------------------- お問い合わせフォーム ↑--------------------->
+
+
+  <!-- FOOTER -->
+  <section class="bg-gray-500">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+        <div class="px-5 py-2">
+
+          <a href="#sales-point" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
+            当社の強み
+          </a>
+        </div>
+        <div class="px-5 py-2">
+          <a href="#price" class="text-sm leading-6transition duration-700 text-white hover:text-gray-300">
+            料金プラン
+          </a>
+        </div>
+        <div class="px-5 py-2">
+          <a href="#flow" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
+            制作の流れ
+          </a>
+        </div>
+        <div class="px-5 py-2">
+          <a href="#faq" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
+            よくある質問
+          </a>
+        </div>
+        <div class="px-5 py-2">
+          <a href="#contact" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
             お問い合わせ
-          </h2>
-
-          <div class="fadeIn mx-auto max-w-7xl rounded">
-            <div class="flex flex-col lg:flex-row justify-center">
-      
-              <div class="w-full bg-white lg:w-10/12 xl:w-9/12">
-                <div class="flex flex-col items-start justify-start w-full h-full p-5 lg:p-16 xl:p-24">
-
-                  <div class="relative w-full mt-10 space-y-8">
-                    <form id="my-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSepbhWQ2-zvboaLtI-TMEFf7Fj2rMxacDIIM_gvrAHpLXtkbA/formResponse?embedded=true">
-                      <div class="relative">
-                        <label class="font-medium text-gray-900">会社名</label>
-                        <input name="entry.1689887111" type="text" class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="会社名" />
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">氏名</label>
-                        <input name="entry.2058545251" type="text" class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="氏名" required />
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">ふりがな</label>
-                        <input name="entry.1021238983" type="text" class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="ふりがな" required />
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">メールアドレス</label>
-                        <input name="entry.1321957010" type="text" class="block w-full px-4 py-4 mt-2 text-xmd placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="メールアドレス" required />
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">電話番号</label>
-                        <input name="entry.537347965" type="text" class="block w-full px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" placeholder="電話番号" required />
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">件名</label>
-                        <div class="radio-button max-w-screen-xl mx-auto py-4 flex flex-col items-center">
-                          <div class="flex w-full relative">
-                            <input name="entry.541335101" type="radio" id="option0" class="appearance-none" value="新規サイト制作" />
-                            <label for="option0" class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none rounded-full py-2 text-gray-700">新規サイト制作</label>
-      
-                            <input name="entry.541335101" type="radio" id="option1" class="appearance-none" value="既存サイトリニューアル" />
-                            <label for="option1" class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">既存サイト<br>リニューアル</label>
-      
-                            <input name="entry.541335101" type="radio" id="option2" class="appearance-none" value="LPページ制作" />
-                            <label for="option2" class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">LPページ制作</label>
-      
-                            <input name="entry.541335101" type="radio" id="option3" class="appearance-none" value="その他" />
-                            <label for="option3" class="z-20 cursor-pointer w-1/4 flex items-center justify-center truncate select-none  rounded-full py-2 text-gray-700">その他</label>
-      
-                            <div class="radio-focus z-10 w-1/4 flex items-center justify-center truncate select-none  rounded-full p-0 h-full absolute transform transition-transform tabAnim"></div>
-                          </div>
-                        </div>
-                      </div>
-  
-                      <div class="relative">
-                        <label class="font-medium text-gray-900">お問い合わせ内容</label>
-                        <textarea name="entry.1083006528" type="text" class="block w-full h-60 px-4 py-4 mt-2 text-md placeholder-gray-400 bg-gray-200 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50" required></textarea>
-                      </div>
-                      <div class="relative pt-4">
-                        <label class="font-medium text-gray-900">同意内容</label>
-                        <div class="ml-2">
-                          <div class="flex mt-1">
-                            <div class="ml-3 text-sm">
-                              <div class="flex items-center h-5">
-                                <input id="プライバシーポリシー" name="entry.660928619" value="プライバシーポリシー" required type="checkbox" class="focus:ring-indigo-500 h-5 w-5 text-indigo-600 border-gray-300 rounded">
-                                <label for="プライバシーポリシー" class="pl-2 font-medium text-gray-700">プライバシーポリシー</label>
-                              </div>
-                              <div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="flex mt-1">
-                            <div class="ml-3 text-sm">
-                              <div class="flex items-center h-5">
-                                <input id="利用規約" name="entry.660928619" value="利用規約" required type="checkbox" class="focus:ring-indigo-500 h-5 w-5 text-indigo-600 border-gray-300 rounded">
-                                <label for="利用規約" class="pl-2 font-medium text-gray-700">利用規約</label>
-                              </div>
-                              <div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- ------------------------------------------- -->
-                        </div>
-                        <div class="form-submit relative pt-6">
-                          <button type="submit" class="btn inline-block w-full px-5 py-4 text-xl font-medium text-center text-white transition duration-200 bg-blue-600 rounded-lg hover:bg-blue-500 ease">送信</button>
-                        </div>
-                      </div>
-                    </form>
-                    <!-- 送信後メッセージ -->
-                    <p class="end-message">お問い合わせありがとうございました</p>
-                    <p class="false-message">送信失敗です</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </section>
-        <!------------------------- お問い合わせフォーム ↑--------------------->
-    
-        
-        <!-- FOOTER -->
-        <section class="bg-gray-500">
-          <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-            <nav class="flex flex-wrap justify-center -mx-5 -my-2">
-              <div class="px-5 py-2">
-
-                <a href="#sales-point" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
-                当社の強み
-                </a>
-              </div>
-              <div class="px-5 py-2">
-                <a href="#price" class="text-sm leading-6transition duration-700 text-white hover:text-gray-300">
-                料金プラン
-                </a>
-              </div>
-              <div class="px-5 py-2">
-                <a href="#flow" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
-                制作の流れ
-                </a>
-              </div>
-              <div class="px-5 py-2">
-                <a href="#faq" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
-                よくある質問
-                </a>
-              </div>
-              <div class="px-5 py-2">
-                <a href="#contact" class="text-sm leading-6 transition duration-700 text-white hover:text-gray-300">
-                お問い合わせ
-                </a>
-              </div>
-            </nav>
-            <div class="flex justify-center mt-8 space-x-6">
-              <a href="#" class="transition duration-700 text-white hover:text-gray-300">
-                <span class="sr-only">Facebook</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                    clip-rule="evenodd">
-                  </path>
-                </svg>
-              </a>
-              <a href="#" class="transition duration-700 text-white hover:text-gray-300">
-                <span class="sr-only">Instagram</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                    clip-rule="evenodd">
-                  </path>
-                </svg>
-              </a>
-              <a href="#" class="transition duration-700 text-white hover:text-gray-300">
-                <span class="sr-only">Twitter</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
-                  </path>
-                </svg>
-              </a>
-              <a href="#" class="transition duration-700 text-white hover:text-gray-300">
-                <span class="sr-only">GitHub</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                    clip-rule="evenodd">
-                  </path>
-                </svg>
-              </a>
-              <a href="#" class="transition duration-700 text-white hover:text-gray-300">
-                <span class="sr-only">Dribbble</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                    clip-rule="evenodd">
-                  </path>
-                </svg>
-              </a>
-            </div>
-            <!-- <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          </a>
+        </div>
+      </nav>
+      <div class="flex justify-center mt-8 space-x-6">
+        <a href="#" class="transition duration-700 text-white hover:text-gray-300">
+          <span class="sr-only">Facebook</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd">
+            </path>
+          </svg>
+        </a>
+        <a href="#" class="transition duration-700 text-white hover:text-gray-300">
+          <span class="sr-only">Instagram</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+              clip-rule="evenodd">
+            </path>
+          </svg>
+        </a>
+        <a href="#" class="transition duration-700 text-white hover:text-gray-300">
+          <span class="sr-only">Twitter</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+            </path>
+          </svg>
+        </a>
+        <a href="#" class="transition duration-700 text-white hover:text-gray-300">
+          <span class="sr-only">GitHub</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+              clip-rule="evenodd">
+            </path>
+          </svg>
+        </a>
+        <a href="#" class="transition duration-700 text-white hover:text-gray-300">
+          <span class="sr-only">Dribbble</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+              clip-rule="evenodd">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <!-- <p class="mt-8 text-base leading-6 text-center text-gray-400">
               © 2021 SomeCompany, Inc. All rights reserved.
             </p> -->
-          </div>
-        </section>
+    </div>
+  </section>
 
-    <!-- AlpineJS Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scroll.js"></script>
-    <script type="text/javascript" src="form_thanks.js"></script>
-    <script type="text/javascript" src="count_up.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-  </body>
+  <!-- AlpineJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scroll.js"></script>
+  <script type="text/javascript" src="form_thanks.js"></script>
+  <script type="text/javascript" src="count_up.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</body>
+
 </html>

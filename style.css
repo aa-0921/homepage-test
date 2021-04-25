@@ -2,6 +2,43 @@ html {
   scroll-behavior: smooth;
 }
 
+#count-up-wrap p {
+  width: 100%;
+  /* font-size: 72px; */
+  text-align: center;
+  color: #fff;
+  /* font-family: "Libre Barcode EAN13 Text", cursive; */
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0.03em 0.03em 0 #90caf9;
+}
+
+.cost {
+  /* padding: 0.5em 1em; */
+  width: auto;
+  margin: 3px;
+  font-weight: bold;
+  /* color: #6091d3; 文字色 */
+  color: white;
+  border: solid 3px white; /*線*/
+  border-radius: 10px; /*角の丸み*/
+  max-width: 20rem;
+}
+
+.top-comment {
+  /* ding: 3em; */
+  /* height: 320px; */
+  border-radius: 20px;
+  /* backdrop-filter: blur(10px); */
+  /* box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  position: relative;
+  /* transition: all 0.2s ease-in-out; */
+  text-shadow: black 0 0 5px;
+}
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -267,69 +304,3 @@ video {
     -webkit-transform: rotate(0deg);
 }
 
-/* カウントアップテスト */
-​
-#count-up-wrap p {
-  width: 100%;
-  /* font-size: 72px; */
-  text-align: center;
-  color: #fff;
-  /* font-family: "Libre Barcode EAN13 Text", cursive; */
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 0.03em 0.03em 0 #90caf9;
-}
-/* #count {
-  font-size: 150px;
-} */
-​
-.left-speech-balloon {
-  width: 1rem;
-  height: 1rem;
-  background-image: linear-gradient(
-    to right top,
-    transparent 44%,
-    white 44%,
-    white 56%,
-    transparent 56%
-  );
-}
-​
-.right-speech-balloon {
-  /* width: 1rem; */
-  /* height: 1rem; */
-  background-image: linear-gradient(
-    to left top,
-    transparent 44%,
-    white 44%,
-    white 56%,
-    transparent 56%
-  );
-}
-​
-.cost {
-  /* padding: 0.5em 1em; */
-  width: auto;
-  margin: 3px;
-  font-weight: bold;
-  /* color: #6091d3; 文字色 */
-  color: white;
-  border: solid 3px white; /*線*/
-  border-radius: 10px; /*角の丸み*/
-  max-width: 20rem;
-}
-​
-.top-comment {
-  /* ding: 3em; */
-  /* height: 320px; */
-  border-radius: 20px;
-  /* backdrop-filter: blur(10px); */
-  /* box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2); */
-  text-align: center;
-  position: relative;
-  /* transition: all 0.2s ease-in-out; */
-  text-shadow: black 0 0 5px;
-}
-/* カウントアップテスト */
