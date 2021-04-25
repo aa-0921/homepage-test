@@ -279,7 +279,7 @@ video {
 .fadeIn {
   transition: 1.5s;
   opacity: 0;
-  transform:translatey(150px);
+  transform:translatey(100px);
 }
 
 .fadeIn.animated {
@@ -291,16 +291,16 @@ video {
   transition: 1.5s;
   opacity: 0;
   transform:translatey(100px);
-  transform: rotate(-10deg);
+  /* transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
-    -webkit-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg); */
 }
 
 .fadeIn-rotated.animated {
   opacity: 1;
   transform:translatey(0px);
-  transform: rotate(0deg);
+  /* transform: rotate(0deg);
   -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); */
 }
 
