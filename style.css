@@ -2,6 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.logo , .logo-footer{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 #count-up-wrap p {
   width: 100%;
   /* font-size: 72px; */
@@ -28,7 +36,8 @@ html {
 }
 
 .top-comment {
-  /* ding: 3em; */
+  font-family: 'Noto Sans JP', sans-serif;
+    /* ding: 3em; */
   /* height: 320px; */
   border-radius: 20px;
   /* backdrop-filter: blur(10px); */
@@ -68,9 +77,10 @@ body {
 video {
   position: relative;
   width: 100%;
+  filter: blur(2.5px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #video1 {
     display: none;
   }
