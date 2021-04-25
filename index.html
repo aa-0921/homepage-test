@@ -11,6 +11,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Section 1　main visual -->
@@ -110,7 +112,53 @@
               <video id="video1" class="video" autoplay loop poster="img/mv-sp.jpg">
                 <source src="movie/video1.mp4" type="video/mp4">
               </video>
-              <div class="top-video-text">
+                      <!-- カウントアップ -->
+        <div class="top-video-text w-full text-white text-2xl md:text-2xl lg:text-4xl font-extrabold leading-10 tracking-tight text-white text-center sm:leading-none md:mt-12">
+          <div class="flex justify-center items-center">
+            <!-- <div class="left-speech-balloon"></div> -->
+            <div class="text-white  mx-2 flex h-20 md:h-14">
+              <!-- md:max-w-lg md:text-center -->
+              <!-- lg:text-2xl -->
+              <div class="flex flex-col justify-center">
+                <div class="font-light mb-4">＼</div>
+              </div>
+              <div class="mx-4">めんどくさい初期費用は全て無料</div>
+              <div class="flex flex-col justify-center">
+                <div class="font-light mb-4">／</div>
+              </div>
+            </div>
+            <!-- <div class="right-speech-balloon"></div> -->
+          </div>
+          <div class="cost text-white text-center lg:text-2xl mx-auto mb-8 sm:p-2">
+            <!-- md:max-w-lg -->
+            システム保守・管理費用
+          </div>
+          <!-- <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">システム保守・管理費用</span> -->
+          <div class="flex mx-auto justify-center sm:mb-4 md:mb-0 h-auto">
+            <div class="flex flex-col items-end">
+              <div class="text-white  mt-auto mb-2 md:mb-2 lg:mb-8 mr-2 max-w-lg md:text-center sm:text-md md:text-xl lg:text-2xl p-0">
+                月々 ¥
+              </div>
+            </div>
+            <div id="count-up-wrap" class="text-md text-8xl md:text-8xl lg:text-9xl">
+              <p id="count" data-from="49999" data-to="14870">0</p>
+            </div>
+            <div class="flex flex-col justify-center">
+              <div class="ml-2 mt-2 text-white md:max-w-lg md:text-center lg:text-lg mb-4 sm:mb-2">
+                〜
+              </div>
+            </div>
+          </div>
+          <h1 class="top-comment font-extrabold leading-10 tracking-tight mx-auto text-white text-center sm:leading-none text-xl md:text-xl lg:text-2xl sm:w-3/4 my-10">
+            <span class="inline">様々な業種で売上を増やしたマーケター監修の為、</span><br />
+            <!-- sm:text-xs -->
+            <span class="inline">90%のクライアント様から</span><br class="md:hidden lg:hidden" /><span></span>売上＆客数＆問い合わせ数が上がった報告</span>
+            <!-- </span><br class="md:hidden lg:hidden" /><span> -->
+            <!-- <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">システム保守・管理費用</span> -->
+          </h1>
+        </div>
+        <!-- カウントアップ -->
+              <!-- <div class="top-video-text">
                   <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left text-white md:text-center sm:leading-none md:text-6xl lg:text-7xl">
                     <span class="inline md:block">Start Crafting Your</span>
                     <span class="mt-2 text-transparent bg-clip-text bg-gradient-to-br text-white md:inline-block">Next Great Idea</span>
@@ -119,7 +167,7 @@
                     Simplifying the creation of landing pages, blog pages, application
                     pages and so much more!
                   </div>
-              </div>
+              </div> -->
           </div>
       </div>
     </section>
@@ -800,5 +848,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scroll.js"></script>
     <script type="text/javascript" src="form_thanks.js"></script>
+    <script type="text/javascript" src="count_up.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   </body>
 </html>
