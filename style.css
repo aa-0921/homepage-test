@@ -220,3 +220,34 @@ video {
 #drawer-check:checked ~ .drawer-content {
   left: 30%;/* メニューを画面に入れる */
 }
+
+
+/* fade in */
+
+.fadeIn {
+  transition: 1.5s;
+  opacity: 0;
+  transform:translatey(150px);
+}
+
+.fadeIn.animated {
+  opacity: 1;
+  transform:translatey(0px);
+}
+
+.fadeIn-rotated {
+  transition: 1.5s;
+  opacity: 0;
+  transform:translatey(100px);
+  transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+
+.fadeIn-rotated.animated {
+  opacity: 1;
+  transform:translatey(0px);
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
