@@ -3,11 +3,12 @@ html {
 }
 
 section {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.logo , .logo-footer{
-  font-family: 'Josefin Sans', sans-serif;
+.logo,
+.logo-footer {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #count-up-wrap p {
@@ -36,8 +37,8 @@ section {
 }
 
 .top-comment {
-  font-family: 'Noto Sans JP', sans-serif;
-    /* ding: 3em; */
+  font-family: "Noto Sans JP", sans-serif;
+  /* ding: 3em; */
   /* height: 320px; */
   border-radius: 20px;
   /* backdrop-filter: blur(10px); */
@@ -49,7 +50,7 @@ section {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .scroll-prevent {
@@ -86,7 +87,7 @@ video {
   }
 
   .video-container {
-    height:100vh;
+    height: 100vh;
     background-image: url(img/mv-sp.jpg);
     background-size: cover;
     background-repeat: none;
@@ -100,7 +101,7 @@ video {
     right: 0;
     bottom: 0;
     left: 0;
-    content: ' ';
+    content: " ";
   }
 }
 
@@ -119,13 +120,12 @@ video {
   position: fixed;
   z-index: 10;
   width: 100%;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #navi {
   font-size: 0.9rem;
 }
-
 
 /* button */
 
@@ -169,12 +169,10 @@ video {
 }
 /* ---radio button------ */
 
-
-@media screen and  (min-width:768px) {
+@media screen and (min-width: 768px) {
   .drawer {
-    display:none;
+    display: none;
   }
-  
 }
 
 /* 画面サイズが768pxまではここを読み込む  (sm) */
@@ -183,7 +181,6 @@ video {
     font-size: 0.7rem;
   }
 }
-
 
 /* ---form message------ */
 .end-message {
@@ -194,14 +191,11 @@ video {
 }
 /* ---form message------ */
 
-
 .neumorphism {
   border-radius: 50%;
-  background: #F3F4F6;
-  box-shadow:  10px 10px 19px #dbdcdd,
-               -10px -10px 19px #ffffff;
+  background: #f3f4f6;
+  box-shadow: 10px 10px 19px #dbdcdd, -10px -10px 19px #ffffff;
 }
-
 
 /* --- humberger menu------ */
 
@@ -218,7 +212,7 @@ video {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 100;/* 重なり順を一番上に */
+  z-index: 100; /* 重なり順を一番上に */
   cursor: pointer;
 }
 
@@ -226,7 +220,7 @@ video {
 .drawer-open span,
 .drawer-open span:before,
 .drawer-open span:after {
-  content: '';
+  content: "";
   display: block;
   height: 3px;
   width: 25px;
@@ -261,46 +255,45 @@ video {
   top: 0;
   transform: rotate(-45deg);
 }
-  
+
 /* メニューのデザイン*/
 .drawer-content {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
-  left: 150%;/* メニューを画面の外に飛ばす */
+  left: 150%; /* メニューを画面の外に飛ばす */
   z-index: 99;
   background: #fff;
-  transition: .5s;
-  opacity: .9;
+  transition: 0.5s;
+  opacity: 0.9;
   padding-top: 2rem;
   padding-left: 1rem;
-  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* アイコンがクリックされたらメニューを表示 */
 #drawer-check:checked ~ .drawer-content {
-  left: 30%;/* メニューを画面に入れる */
+  left: 30%; /* メニューを画面に入れる */
 }
-
 
 /* fade in */
 
 .fadeIn {
   transition: 1.5s;
   opacity: 0;
-  transform:translatey(100px);
+  transform: translatey(100px);
 }
 
 .fadeIn.animated {
   opacity: 1;
-  transform:translatey(0px);
+  transform: translatey(0px);
 }
 
 .fadeIn-rotated {
   transition: 1.5s;
   opacity: 0;
-  transform:translatey(100px);
+  transform: translatey(100px);
   /* transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg); */
@@ -308,9 +301,13 @@ video {
 
 .fadeIn-rotated.animated {
   opacity: 1;
-  transform:translatey(0px);
+  transform: translatey(0px);
   /* transform: rotate(0deg);
   -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg); */
 }
 
+iframe {
+  visibility: hidden;
+  height: 1px;
+}
