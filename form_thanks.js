@@ -6,7 +6,7 @@ $(document).ready(function () {
       url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSepbhWQ2-zvboaLtI-TMEFf7Fj2rMxacDIIM_gvrAHpLXtkbA/formResponse",
       data: formData,
       type: "POST",
-      dataType: "json",
+      dataType: "xml",
       statusCode: {
         0: function () {
           console.log("0: function () {時の処理");
